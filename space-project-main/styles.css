@@ -1,0 +1,390 @@
+@font-face {
+  font-family: navbar;
+  src: url(SpaceFrigate-KVdW.ttf);
+}
+
+@font-face {
+  font-family: main;
+  src: url(TrenchThin-aZ1J.ttf);
+}
+
+@font-face {
+  font-family: heading;
+  src: url(TrenchThin-aZ1J.ttf);
+}
+
+body {
+  margin: 0 auto;
+  width: 1100px;
+  height: 800px;
+  background-color: #3b3251;
+
+  margin-top: 70px;
+}
+
+.socialmedia {
+  background-color: rgba(255, 255, 255, 0.077);
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.twitter {
+  height: 50px;
+  width: 50px;
+}
+
+.facebook {
+  height: 50px;
+  width: 50px;
+}
+
+.youtube {
+  height: 50px;
+  width: 50px;
+}
+
+.twitter:hover,
+.youtube:hover,
+.facebook:hover {
+  scale: 120%;
+  cursor: pointer;
+}
+
+header {
+  background: rgba(242, 241, 241, 0.151);
+
+  backdrop-filter: blur(10px);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 50px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: -40px 20px 50px -50px;
+  position: fixed;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.img1 {
+  margin-top: 10px;
+  background-image: url(planet-space-mars-4k-8l.jpg);
+  min-height: 100%;
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img22 {
+  background-image: url(Mars1-1000x625.jpg);
+  min-height: 100%;
+
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: fadeout 20s alternate-reverse infinite;
+}
+
+.img2 {
+  background-image: url(802ba3c1f247021c7e9bf937cc2bf157.webp);
+  min-height: 100%;
+
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: fade s alternate-reverse infinite;
+}
+
+.imagetext {
+  z-index: 1;
+  position: absolute;
+  font-size: 30px;
+  padding-top: 600px;
+  margin: 100px 200px 30px 220px;
+  font-family: navbar;
+  color: white;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.img3 {
+  background-image: url(marstronaut.jpg);
+  min-height: 100%;
+  max-height: 100%;
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img3 img {
+}
+
+.img3 img section h3 {
+  background-color: #b1303d;
+  width: 400px;
+  border-radius: 30px;
+  padding: 2%;
+  margin: 3px auto;
+}
+
+.section-h1,
+h2,
+h3,
+#haha {
+  font-family: main;
+}
+
+.section p {
+  font-size: 19;
+  font-family: main;
+  font-weight: 500px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  font-family: heading;
+}
+
+.section-light {
+  background-color: #65446d;
+  color: #ddd;
+}
+
+.section-dark {
+  background-color: #483465;
+  color: #ddd;
+}
+
+.section-dark h1 {
+  font-family: heading;
+}
+
+.section-dark p {
+  font-family: main;
+}
+
+.nb {
+  color: orange;
+  font-weight: 400;
+  animation: fadeIn alternate-reverse infinite 500ms;
+  letter-spacing: 3;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.border {
+  font-size: larger;
+  color: white;
+  padding-top: 500px;
+  margin: 200px 300px;
+  position: absolute;
+  width: 600px;
+  font-family: navbar;
+}
+
+button {
+  font-family: navbar;
+  padding: 10px;
+  background-color: #720072;
+
+  border: none;
+  width: 200px;
+  height: 55px;
+
+  padding: 10px 20px 20px 30px;
+
+  position: relative;
+  /* overflow: hidden; */
+  transition: 200ms;
+  color: white;
+}
+
+button span {
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: 200ms;
+  transition-delay: 200ms;
+
+  text-transform: uppercase;
+  letter-spacing: 13px;
+  font-weight: 600;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  transition: 300ms;
+  transition-delay: 200ms;
+
+  box-shadow: 0 0 10px #65446d, 0 0 30px #fa264678, 0 0 50px #5b0072;
+}
+
+button div {
+  transition: 400ms;
+  position: absolute;
+  background-color: #000000;
+  box-shadow: 0 0 15px #6d0ae6, 0 0 30px #5b0072, 0 0 50px #f4ddff(180, 30, 234);
+}
+
+button .top {
+  width: 10px;
+  height: 2px;
+
+  top: 0;
+  left: 0;
+}
+
+button .bottom {
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+}
+
+button .left {
+  width: 2px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+button .right {
+  width: 2px;
+  height: 15px;
+  bottom: 0;
+  right: 0;
+}
+
+button:hover {
+  color: #000;
+}
+
+button:hover span {
+  color: #000;
+  cursor: pointer;
+}
+
+button:hover:before {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button:hover .top,
+button:hover .bottom {
+  width: 100%;
+}
+
+button:hover .left,
+button:hover .right {
+  height: 100%;
+}
+
+button:active {
+  transform: scale(50%);
+}
+
+#haha {
+  animation-name: spin;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: alternate-reverse;
+}
+
+@keyframes spin {
+  0% {
+    color: orange;
+    transform: scale(100%);
+    letter-spacing: 0.6;
+  }
+
+  50% {
+    transform: scale(110%);
+    color: orange;
+    letter-spacing: 1;
+  }
+
+  100% {
+    transform: scale(100%);
+    color: orange;
+    letter-spacing: 1;
+  }
+}
+
+#ppp {
+  width: 900px;
+  font-size: 14px;
+  margin-left: 140px;
+}
+#contacsubmit {
+  color: rgb(246, 246, 246);
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+  width: 25%;
+  background: rgb(37, 39, 77);
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+#contactsubmit:active {
+  transform: scale(80%);
+}
+#contacsubmit::before {
+  background-color: none;
+}
