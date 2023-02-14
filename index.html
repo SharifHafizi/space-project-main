@@ -12,7 +12,7 @@
       href="https://img.icons8.com/flat-round/344/home--v1.png"
       type="image/x-icon"
     />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <h1 class="solar">
@@ -214,6 +214,71 @@
       </div>
     </div>
   </div>
+
+<!-- popup -->
+<div class="popupbackground" id="popupForm">
+  <div class="container">
+    <div class="left-container">
+      <div class="left-con-element">
+        <img
+          src="https://image.ibb.co/kUASdV/contact-image.png"
+          alt="image"
+        />
+        <h2>Contact Us</h2>
+        <h4>
+          We would love to hear from you ! <br />If you didn't get lost on
+          Mars.
+        </h4>
+        <h6>
+          Warning:If you get lost on Mars, you will be SHIFT DELETED from
+          the Earth.
+        </h6>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="right-con-element">
+        <label class="label-el" for="fname">First Name:</label>
+        <br />
+        <input
+          type="text"
+          class="label-input"
+          id="fname"
+          placeholder="Enter First Name"
+          name="fname"
+          required
+        />
+        <br />
+        <label class="label-el" for="lname">Last Name:</label>
+        <br />
+        <input
+          type="text"
+          class="label-input"
+          id="lname"
+          placeholder="Enter Last Name"
+          name="lname"
+          required
+        />
+        <br />
+        <label class="label-el" for="email">Email:</label>
+        <br />
+        <input
+          type="email"
+          class="label-input"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+          required
+        />
+        <br />
+        <label class="label-el" for="comment">Comment:</label>
+        <br />
+        <textarea class="label-input" rows="5" id="comment"></textarea
+        ><br />
+        <button  id="contactsubmit">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
